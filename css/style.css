@@ -1,0 +1,66 @@
+/* INIZIO RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* FINE RESET */
+
+/* INIZIO HEADER */
+header {
+  height: 200px;
+  background: yellow;
+}
+/* FINE HEADER */
+
+/* INIZIO MAIN */
+main {
+  margin: 10px 0;
+}
+main::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+main .col {
+  float: left;
+}
+
+/* colonna destra e sinistra */
+main .col-left,
+main .col-right {
+  width: 24%;
+  height: 400px;
+}
+
+/*  colonna sinistra */
+main .col-left {
+  background: pink;
+}
+
+/* colonna destra */
+main .col-right .box {
+  height: 260px;
+  background: pink;
+  margin-bottom: 20px;
+}
+main .col-right .box:last-child {
+  margin-bottom: 0;
+}
+
+/* colonna centrale */
+main .col-center {
+  width: 50%;
+  background: purple;
+  height: 600px;
+  margin: 0 1%;
+}
+
+/* FINE MAIN */
+
+/* INIZIO FOOTER */
+footer {
+  height: 100px;
+  background: cyan;
+}
+/* FINE FOOTER */
